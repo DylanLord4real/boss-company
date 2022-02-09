@@ -28,7 +28,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 16em;
+        width: 25vw;
         height: 3px;
         background: linear-gradient(135deg, var(--primary-color), var(--fourth-color));
     }
@@ -59,7 +59,7 @@
         transition: all 400ms ease;
     }
     &-info &-div textarea {
-        width: min(40em, 154vh);
+        width: min(40em, 73vw);
         height: 10em;
         outline: none;
         border-radius: 5px;
