@@ -55,13 +55,13 @@ body {
     &-images .circle-image:nth-child(0n + 1) {
         left: 12.5%;
         top: -10em;
-        background-image: url(/assets/images/circle-image1.jpg);
+        background-image: url(assets/images/circle-image1.jpg);
         background-size: cover;
     }
     &-images .circle-image:nth-child(0n + 3) {
         left: 12.5%;
         top: 15em;
-        background-image: url(/assets/images/circle-image2.jpg);
+        background-image: url(assets/images/circle-image2.jpg);
         background-size: cover;
         background-position: center;
         /* outline: 1px solid wheat;
@@ -70,13 +70,13 @@ body {
     &-images .circle-image:nth-child(2n) {
         right: 12.5%;
         top: 1em;
-        background-image: url(/assets/images/circle-image3.jpg);
+        background-image: url(assets/images/circle-image3.jpg);
         background-size: cover;
         background-position: center;
     }
     &-images .circle-image:nth-child(0n + 4) {
         top: 25em;
-        background-image: url(/assets/images/circle-image4.jpg);
+        background-image: url(assets/images/circle-image4.jpg);
         background-size: cover;
     }
 }
@@ -146,7 +146,7 @@ body {
         }
         &-card {
             color: white;
-            background-image: url(/assets/images/med.jpg);
+            background-image: url(assets/images/med.jpg);
             background-size: cover;
             background-position: center;
             padding: 12rem 0 0;
@@ -199,13 +199,13 @@ body {
             }
         }
         &-card:nth-child(0n+2) {
-            background-image: url(/assets/images/accueil3.jpg);
+            background-image: url(assets/images/accueil3.jpg);
         }
         &-card:nth-child(0n+3) {
-            background-image: url(/assets/images/bureau.jpg);
+            background-image: url(assets/images/bureau.jpg);
         }
         &-card:nth-child(0n+1) {
-            background-image: url(/assets/images/accueil2.jpg);
+            background-image: url(assets/images/accueil2.jpg);
         }
         &-card:nth-child(0n+3) .ent-info-card-content {
             transform: translateY(85%);
@@ -241,7 +241,7 @@ body {
             height: 30vh;
             width: 100%;
             color: white;
-            background-image: url(/assets/images/accueil4.jpg);
+            background-image: url(assets/images/accueil4.jpg);
             background-size: cover;
             background-position: center;
             border-radius: 1em;
@@ -256,10 +256,10 @@ body {
             }
         }
         &-card:nth-child(0n+ 1) {
-            background-image: url(/assets/images/service2.jpg);
+            background-image: url(assets/images/service2.jpg);
         }
         &-card:nth-child(2n+2) {
-            background-image: url(/assets/images/service1.jpg);
+            background-image: url(assets/images/service1.jpg);
         }
         &-card:hover &-card-content,
         &-card:focus &-card-content {
