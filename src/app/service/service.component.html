@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>LES SERVICES QUE NOUS FOURNISSONS</h1>
+    <div class="show-service">
+        <div *ngFor="let info of this.serv" [ngStyle]="{'background-image': info.img}" class="ent-info-card">
+            <div class="ent-info-card-content">
+                <h2 class="ent-info-card-title">{{info.name}}</h2>
+                <p class="ent-info-card-body"></p>
+                <a routerLink="/contacts" class="ent-info-card-button">Nous Ecrire</a>
+            </div>
+        </div>
+    </div>
+</div>

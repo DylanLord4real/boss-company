@@ -1,0 +1,90 @@
+.container h1 {
+    font-size: 2em;
+    font-family: var(--font-family-title);
+    color: var(--fourth-color);
+    padding-bottom: 2em;
+}
+
+.show-service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2em;
+    justify-items: center;
+}
+
+.service-card {
+    height: 40vh;
+    border: 1px solid black;
+}
+
+.ent {
+    &-info {
+        &-card {
+            color: white;
+            background-image: url(./../../assets/images/med.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 12rem 0 0;
+            width: 27.5vw;
+            height: 45vh;
+            border-radius: 0.75rem;
+            box-shadow: 5px 5px 25px black;
+            overflow: hidden;
+            transition: transform 500ms ease-in;
+            &-content {
+                --padding: 1.8em;
+                padding: var(--padding);
+                background: linear-gradient( hsl(0 0% 0% / 0), hsl(20% 0 0 / 0.3) 20%, hsl(0 0% 0% / 1));
+                transform: translateY(35%);
+                transition: transform 500ms ease;
+            }
+            &-title {
+                position: relative;
+                width: max-content;
+                font-size: 1.15em;
+            }
+            &-title::after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                left: calc(var(--padding) * -1);
+                bottom: 0;
+                width: calc(100% + var(--padding));
+                background-color: var(--primary-color);
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 500ms ease;
+            }
+            &-body {
+                font-size: 1.15em;
+                padding-bottom: 1.25em;
+            }
+            &-button {
+                cursor: pointer;
+                display: inline;
+                text-decoration: none;
+                color: black;
+                background-color: var(--primary-color);
+                padding: 0.65em 1.5em;
+                transition: background-color 500ms ease;
+            }
+            &-button:hover,
+            &-button:focus {
+                background-color: var(--secondary-color);
+                color: white;
+            }
+        }
+        &-card:hover,
+        &-card:focus {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.ent-info-card:hover .ent-info-card-title::after {
+    transform: scaleX(1);
+}
+
+.ent-info-card:hover .ent-info-card-content {
+    transform: translateY(0);
+}

@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    height: 92vh;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--fourth-color));
+}
+
+.form {
+    &-container {
+        max-width: 700px;
+        width: 100%;
+        color: #FFF;
+        background: linear-gradient(75deg, var(--primary-color), var(--third-color));
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 30px #000;
+    }
+    &-title {
+        font-size: 25px;
+        font-family: var(--font-family-normal);
+        font-weight: 500;
+        position: relative;
+    }
+    &-title::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 16em;
+        height: 3px;
+        background: linear-gradient(135deg, var(--primary-color), var(--fourth-color));
+    }
+    &-container form &-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+    form &-info &-div {
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 20px);
+    }
+    &-info &-div &-details {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    &-info &-div input {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #CCC;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 400ms ease;
+    }
+    &-info &-div textarea {
+        width: min(40em, 154vh);
+        height: 10em;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid wheat;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 400ms ease;
+    }
+    &-info &-div input:focus,
+    &-info &-div textarea:focus {
+        border-color: rgba(32, 12, 44, 0.75);
+    }
+}
+
+form .button input {
+    height: 7.5vh;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #FFF;
+    background: linear-gradient(135deg, var(--secondary-color), var(--fourth-color));
+    transition: all 0.8s ease;
+}
+
+form .button input:hover {
+    background: wheat;
+    color: black;
+}
