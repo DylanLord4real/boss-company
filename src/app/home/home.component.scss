@@ -317,6 +317,13 @@ body {
     height: 20vh;
     background: linear-gradient(to right, var(--primary-color), var(--fourth-color));
     color: white;
+    text-align: center;
+    &-title {
+        text-align: center;
+    }
+    &-rights {
+        color: #CCC;
+    }
 }
 
 

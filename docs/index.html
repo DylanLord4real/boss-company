@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
+<!DOCTYPE html><html lang="fr"><head>
     <meta charset="utf-8">
     <title>BossCompanyApp</title>
     <base href="/boss-company/">
@@ -10,147 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./assets/css/animation.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <style type="text/css">
-        @font-face {
-            font-family: 'DM Serif Display';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');
-            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-
-        @font-face {
-            font-family: 'DM Serif Display';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-
-        @font-face {
-            font-family: 'DM Serif Display';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');
-            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-
-        @font-face {
-            font-family: 'DM Serif Display';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-
-        @font-face {
-            font-family: 'Lobster';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zo-mM4MwWJXNqA.woff2) format('woff2');
-            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-        }
-
-        @font-face {
-            font-family: 'Lobster';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zoamM4MwWJXNqA.woff2) format('woff2');
-            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-        }
-
-        @font-face {
-            font-family: 'Lobster';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zo2mM4MwWJXNqA.woff2) format('woff2');
-            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-        }
-
-        @font-face {
-            font-family: 'Lobster';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zoymM4MwWJXNqA.woff2) format('woff2');
-            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-
-        @font-face {
-            font-family: 'Lobster';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-    </style>
-    <style>
-         :root {
-            --primary-color: #b7d336;
-            --fade-prim-color: #a9c328;
-            --secondary-color: #4eb548;
-            --third-color: #4586c4;
-            --fourth-color: #6384b9;
-            --color-grad-200: #9eb9ea4d;
-            --color-grad-300: #8ab3ff4d;
-            --font-family: "Lobster", cursive;
-            --font-family-title: "DM Serif Display", serif;
-            --bold-light: 300;
-            --font-title: 4.5rem;
-            --font-normal: 1.5rem;
-        }
-
-        *,
-        :after,
-        :before {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        html:focus-within {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            min-height: 100vh;
-            text-rendering: optimizeSpeed;
-            line-height: 1.5;
-        }
-
-        @media (prefers-reduced-motion:reduce) {
-            html:focus-within {
-                scroll-behavior: auto;
-            }
-            *,
-            :after,
-            :before {
-                animation-duration: .01ms!important;
-                animation-iteration-count: 1!important;
-                transition-duration: .01ms!important;
-                scroll-behavior: auto!important;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="styles.cf1847ed120af10e7dd4.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.cf1847ed120af10e7dd4.css"></noscript></head>
+    <style type="text/css">@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmserifdisplay/v9/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zo-mM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zoamM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zo2mM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zoymM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+<style>:root{--primary-color:#b7d336;--fade-prim-color:#a9c328;--secondary-color:#4eb548;--third-color:#4586c4;--fourth-color:#6384b9;--color-grad-200:#9eb9ea4d;--color-grad-300:#8ab3ff4d;--font-family:"Lobster",cursive;--font-family-title:"DM Serif Display",serif;--bold-light:300;--font-title:4.5rem;--font-normal:1.5rem;}*,:after,:before{box-sizing:border-box;}body{margin:0;}html:focus-within{scroll-behavior:smooth;}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5;}@media (prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto;}*,:after,:before{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}}</style><link rel="stylesheet" href="styles.cf1847ed120af10e7dd4.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.cf1847ed120af10e7dd4.css"></noscript></head>
 
 <body>
     <app-root></app-root>
-    <script src="runtime.80fedb4541d5c69a8ef7.js" defer></script>
-    <script src="polyfills.31c1a3d3e97f705dc620.js" defer></script>
-    <script src="main.12a6a1268f3843446e3e.js" defer></script>
+<script src="runtime.80fedb4541d5c69a8ef7.js" defer></script><script src="polyfills.31c1a3d3e97f705dc620.js" defer></script><script src="main.4cd6de2049ed5dd4939c.js" defer></script>
 
 
-</body>
-
-</html>
+</body></html>
