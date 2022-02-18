@@ -23,25 +23,25 @@ export class InfoService {
       id: 3,
       name: "Maintenace / Entretien",
       img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
-      desc: "une description du service de manière complete"
+      desc: "Dans ce service nous procédons à l'entretien et la maintenance corrective et préventive des équipements, des appareilles ou des systemes à composant informatique "
     },
     {
       id: 4,
       name: "Gestion électronique des données",
       img: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1106&q=80",
-      desc: "Ce service vous permets d'assurer le traitement de vos données electronique de manière sûre et efficace "
+      desc: "Ce service vous permet d'assurer le traitement de vos données electronique de manière sûre et efficace "
     },
     {
       id: 5,
       name: "Solution mobile",
       img: "https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      desc: "une description du service de manière complete"
+      desc: "Ce service vous assure de rester connecter à votre environnement de travail  en permanence et d'accéder à tout types d'informations de votre entreprise. "
     },
     {
       id: 6,
       name: "Raccordement inter site",
       img: "https://images.unsplash.com/photo-1581092446327-9b52bd1570c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      desc: "une description du service de manière complete"
+      desc: "Ce service est mis à votre disposition pour mettre en réseau les sites ou locaux que vous utilisez"
     },
     {
       id: 7,

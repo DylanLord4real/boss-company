@@ -10,9 +10,11 @@
     color: white;
     height: 55vh;
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     font-family: var(--font-family);
+    align-content: center;
+    align-items: end;
+    justify-items: center;
 }
 
 .card-present ul li {
