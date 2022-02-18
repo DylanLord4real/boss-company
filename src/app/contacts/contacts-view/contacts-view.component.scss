@@ -6,7 +6,7 @@
 .card-present {
     margin-top: 2.5em;
     width: 100%;
-    background-color: #BA43F0;
+    background-color: grey;
     color: white;
     height: 55vh;
     display: grid;
@@ -46,7 +46,7 @@
 }
 
 .buttonone {
-    background-color: greenyellow;
+    background-color: white;
     text-decoration: none;
     padding: 0.75em;
     color: black;
@@ -56,7 +56,7 @@
 
 .buttonone:hover {
     color: white;
-    background-color: var(--fourth-color);
+    background-color: black;
 }
 
 .buttons {
