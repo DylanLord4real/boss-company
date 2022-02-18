@@ -1,5 +1,6 @@
 .container {
-    display: flex;
+    display: grid;
+    grid-auto-flow: row;
     height: 92vh;
     justify-content: center;
     align-items: center;
@@ -7,8 +8,32 @@
     background: var(--primary-color);
 }
 
+.card-explain {
+    height: 30vh;
+    max-width: 700px;
+    width: 100%;
+    background: var(--third-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 2vh;
+    box-shadow: 7px 4px 2em #8E9AAF;
+}
+
+.card-explain h1 {
+    font-family: var(--font-family-title);
+    font-size: 3em;
+    text-align: center;
+}
+
+.card-explain p {
+    margin: 1em 2em;
+    font-size: var(--font-normal);
+    text-align: center;
+}
+
 .form {
     &-container {
+        margin-top: 2em;
         max-width: 700px;
         width: 100%;
         color: #FFF;
@@ -47,7 +72,7 @@
         font-weight: 500;
         margin-bottom: 5px;
     }
-    &-info &-div input {
+    &-info &-div &-input {
         height: 45px;
         width: 100%;
         outline: none;
@@ -81,7 +106,7 @@ form .button input {
     border: none;
     outline: none;
     color: #FFF;
-    background: linear-gradient(135deg, var(--secondary-color), var(--fourth-color));
+    background: linear-gradient(135deg, #CBC0D3, var(--fourth-color));
     transition: all 0.8s ease;
 }
 

@@ -6,8 +6,8 @@ body {
 
 .container {
     height: 100%;
-    color: white;
-    background: linear-gradient(to right, var(--primary-color), var(--fourth-color));
+    color: black;
+    background: var(--secondary-color);
 }
 
 .present {
@@ -17,7 +17,8 @@ body {
         display: grid;
         gap: 2em;
         grid-template-columns: repeat(2, 1fr);
-        align-items: stretch;
+        justify-content: center;
+        align-items: center;
         //overflow: hidden;
     }
     &-info {
@@ -38,52 +39,21 @@ body {
         font-size: var(--font-normal);
         animation: 4s ease 1 running popin
     }
-    &-images {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        //overflow: hidden;
-    }
+    &-images {}
     &-images .circle-image {
-        width: 12em;
-        height: 22em;
-        border-radius: 8em;
-        position: absolute;
-        box-shadow: 3px 3px 35px wheat;
-    }
-    &-images .circle-image:nth-child(0n + 1) {
-        left: 12.5%;
-        top: -10em;
-        background-image: url(../../assets/images/circle-image1.jpg);
-        background-size: cover;
-    }
-    &-images .circle-image:nth-child(0n+3) {
-        left: 12.5%;
-        top: 15em;
-        background-image: url(../../assets/images/circle-image2.jpg);
-        background-size: cover;
+        width: 35em;
+        height: 35em;
+        border-radius: 50%;
+        margin-left: 2em;
+        background-image: url(./../../assets/images/Icon.jpeg);
         background-position: center;
-        /* outline: 1px solid wheat;
-        outline-offset: 2em;*/
-    }
-    &-images .circle-image:nth-child(2n) {
-        right: 12.5%;
-        top: 1em;
-        background-image: url(../../assets/images/circle-image3.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    &-images .circle-image:nth-child(0n+4) {
-        top: 25em;
-        background-image: url(../../assets/images/circle-image4.jpg);
         background-size: cover;
     }
 }
 
 .button {
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--third-color);
     border-radius: 5px;
     color: white;
     box-shadow: none;
@@ -104,7 +74,7 @@ body {
 .market-info {
     position: relative;
     height: 30vh;
-    background: linear-gradient(to left, var(--third-color), var(--primary-color));
+    background: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -116,6 +86,7 @@ body {
     justify-content: center;
     color: whitesmoke;
     border-right: 1px solid wheat;
+    opacity: 0;
 }
 
 .ent {
@@ -205,7 +176,7 @@ body {
             background-image: url(../../assets/images/bureau.jpg);
         }
         &-card:nth-child(0n+1) {
-            background-image: url(../../assets/images/accueil2.jpg);
+            background-image: url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
         }
         &-card:nth-child(0n+3) .ent-info-card-content {
             transform: translateY(85%);
@@ -315,7 +286,7 @@ body {
 
 .footer {
     height: 20vh;
-    background: linear-gradient(to right, var(--primary-color), var(--fourth-color));
+    background: linear-gradient(to right, var(--third-color), var(--fourth-color));
     color: white;
     text-align: center;
     &-title {

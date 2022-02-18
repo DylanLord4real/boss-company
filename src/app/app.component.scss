@@ -9,25 +9,31 @@ body {
 .navbar {
     width: 100%;
     height: 8vh;
-    background: linear-gradient(to right, var(--fade-prim-color), var(--fourth-color));
-    color: white;
+    background: var(--primary-color);
+    color: black;
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.navbar li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding-top: 0.8rem;
+    transition: 500ms ease-in;
 }
 
 .navbar a {
-    padding-top: 0.8rem;
-    text-align: center;
     text-decoration: none;
     font-size: 1.5em;
-    color: white;
+    color: black;
     flex-wrap: wrap;
     transition: 500ms ease-in;
 }
 
-.navbar a:hover,
-.navbar a:focus {
+.navbar li:hover,
+.navbar li:focus {
     background-color: var(--third-color);
 }
 

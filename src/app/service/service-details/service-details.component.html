@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card-present">
+        <div class="details">
+            <h1 class="title"> {{name}} </h1>
+            <p> {{descdet}} </p>
+            <div class="buttons">
+                <a routerLink="/devis" class="buttonone">Demander un devis</a>
+                <a routerLink="/contacts" class="buttontwo">Nous contacter</a>
+            </div>
+        </div>
+        <div class="photo">
+            <div class="photo-part" [ngStyle]="{'background-image' : 'url('+img+')'} "></div>
+        </div>
+    </div>
+</div>

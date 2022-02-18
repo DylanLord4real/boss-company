@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    width: 70vw;
+    height: 25vh;
+    background-color: var(--fourth-color);
+    margin-left: 15vw;
+    margin-top: 1.5em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 5px 7px 3em gray;
+}
+
+.info h1 {
+    color: white;
+    font-size: var(--font-title);
+    font-family: var(--font-family-title);
+    padding-top: 4vh;
+}
+
+.cards {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.card {
+    width: 22vw;
+    background-color: var(--third-color);
+    height: 42.5vh;
+    border-radius: 1.5em;
+    box-shadow: 5px 7px 2em black;
+    margin-left: 1em;
+    overflow-x: hidden;
+    &-img {
+        width: 22vw;
+        height: 30vh;
+        background-color: white;
+        overflow: hidden;
+    }
+    &-desc {
+        text-align: center;
+        color: white;
+        margin-top: 1em;
+        font-size: var(--font-normal);
+    }
+}
