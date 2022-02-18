@@ -24,8 +24,8 @@
             background-size: cover;
             background-position: center;
             padding: 12rem 0 0;
-            width: 27.5vw;
-            height: 45vh;
+            width: max(27.5vw, 21vh);
+            height: min(45vh, 30vw);
             border-radius: 0.75rem;
             box-shadow: 5px 5px 25px black;
             overflow: hidden;

@@ -49,3 +49,41 @@
         font-size: var(--font-normal);
     }
 }
+
+@media only screen and (max-width: 420px) {
+    .info h1 {
+        font-size: 30px;
+    }
+    .cards {
+        grid-template-columns: none;
+        grid-auto-rows: auto;
+    }
+    .card {
+        width: 80vw;
+        margin-left: 10vw;
+        &-img {
+            width: 80vw;
+        }
+        &-desc {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 1080px) {
+    .info h1 {
+        font-size: 4em;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1FR);
+        grid-auto-columns: auto;
+    }
+    .card {
+        width: 30vw;
+        height: 30vh;
+        &-img {
+            width: 30vw;
+            height: 20vh;
+        }
+    }
+}

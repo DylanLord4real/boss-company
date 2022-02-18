@@ -312,6 +312,7 @@ body {
             grid-template-rows: repeat(2, 1fr);
             gap: 5px;
             width: 100%;
+            justify-items: start;
         }
         &-info {
             padding: 1em;
@@ -325,17 +326,12 @@ body {
             font-size: 0.8em;
             top: -1em;
         }
-        &-images {
-            position: relative;
-            gap: 1em;
-            padding: 1em;
-        }
+        &-images {}
         &-images .circle-image {
-            position: static;
-            height: auto;
-            width: 100%;
+            width: 18.5em;
+            height: 250px;
             border-radius: 0;
-            box-shadow: 2px 2px 15px whitesmoke;
+            box-shadow: 2px 2px 15px darkgray;
         }
     }
     body {
@@ -419,21 +415,54 @@ body {
         }
         &-images .circle-image {
             position: static;
-            width: 12em;
-            height: 9em;
+            width: 45em;
+            height: 23em;
             border-radius: 1em;
-            animation: 3s ease-in 1s 2 alternate img_rotate;
+            animation: 400ms ease-in 1s 2 alternate img_rotate;
         }
         &-info {
-            font-size: 1.25em;
+            font-size: 1.75em;
+        }
+    }
+    .ent {
+        &-info {
+            &-cards {
+                gap: 1em;
+            }
+            &-card {
+                width: 30vw;
+                height: 40vw;
+                &-content {
+                    transform: translateY(25%);
+                    font-size: 14px;
+                }
+                &-content:nth-child(0n + 3) {
+                    transform: translateY(20%);
+                }
+            }
+            &-card:hover &-card-content,
+            &-card:focus &-card-content {
+                transform: translateY(-37%);
+            }
+            &-card:nth-child(0n + 3) &-card-content,
+            &-card:nth-child(0n + 3) &-card-content {
+                transform: translateY(39%);
+            }
+            &-card:nth-child(0n + 3):hover &-card-content,
+            &-card:nth-child(0n + 3):focus &-card-content {
+                transform: translateY(-15%);
+            }
         }
     }
     @keyframes img_rotate {
         from {
             transform: rotateZ(0deg);
         }
+        50% {
+            transform: rotateZ(3deg);
+        }
         to {
-            transform: rotateZ(360deg);
+            transform: rotate(-3deg);
         }
     }
     .market-info {

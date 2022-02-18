@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -13,7 +13,6 @@
     grid-template-columns: repeat(2, 1fr);
     font-family: var(--font-family);
     align-content: center;
-    align-items: end;
     justify-items: center;
 }
 
@@ -61,12 +60,12 @@
 }
 
 .buttons {
-    margin-left: 30vw;
+    margin-left: 17vw;
     margin-top: 2em;
 }
 
 .details {
-    margin: 2em
+    margin: 1.5em
 }
 
 .details p {
@@ -91,5 +90,24 @@
     }
     &-link a:hover {
         color: black;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-present {
+        height: 80vh;
+        grid-template-columns: none;
+        grid-auto-rows: auto;
+        display: grid;
+    }
+    .title {
+        padding-top: 1.5em;
+        font-size: 30px;
+    }
+    .card-present ul li {
+        font-size: 15px;
+    }
+    .buttons {
+        margin-left: 30vw;
     }
 }

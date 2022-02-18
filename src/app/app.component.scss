@@ -41,6 +41,12 @@ body {
 /* Responsive part */
 
 @media screen and (max-width: 420px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar a {
+        font-size: 15px;
+    }
     body {
         max-width: 420px;
     }
