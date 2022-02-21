@@ -1,7 +1,9 @@
 .container h1 {
+    margin-top: 1em;
     font-size: 2em;
-    font-family: var(--font-family-title);
-    color: var(--fourth-color);
+    margin-left: 1.5em;
+    font-family: var(--font-family);
+    color: black;
     padding-bottom: 2em;
 }
 
@@ -20,6 +22,7 @@
 .ent {
     &-info {
         &-card {
+            cursor: pointer;
             color: white;
             background-size: cover;
             background-position: center;
@@ -102,7 +105,7 @@
             }
         }
         &-info-card:hover &-info-card-content {
-            transform: translateY(27%);
+            transform: translateY(-10%);
         }
     }
 }
@@ -132,7 +135,7 @@
             }
         }
         &-info-card:hover &-info-card-content {
-            transform: translateY(-38%);
+            transform: translateY(-60%);
         }
     }
 }
@@ -159,4 +162,18 @@
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 1024px) {}
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    .ent {
+        &-info {
+            &-card {
+                &-body {
+                    font-size: 12px;
+                }
+            }
+            &-card:hover &-card-content,
+            &-card:focus &-card-content {
+                transform: translateY(-85%);
+            }
+        }
+    }
+}

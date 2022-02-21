@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { InfoService } from './../Services/info.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
   serv: any;
-  constructor(private info: InfoService) { }
+  constructor(private info: InfoService, private router: Router) { }
 
   ngOnInit(): void {
     this.serv = this.info.servTab;
+  }
+  goToServiceView(servId: number){
+    this.router.navigate(['/service/'+servId])
   }
 
 }

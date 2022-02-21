@@ -91,3 +91,19 @@
         }
     }
 }
+
+@media screen and (min-width: 420px) and (max-width: 800px) {
+    .card-present {
+        height: 20em;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .details p {
+        font-size: 14px;
+    }
+    .buttons {
+        margin-left: 0;
+        font-size: 12px;
+    }
+}

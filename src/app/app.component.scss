@@ -8,7 +8,7 @@ body {
 
 .navbar {
     width: 100%;
-    height: 8vh;
+    height: max(8vh, 3em);
     background: var(--primary-color);
     color: black;
     display: grid;

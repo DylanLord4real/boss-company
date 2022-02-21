@@ -23,19 +23,19 @@ body {
     }
     &-info {
         padding: 2em;
-        font-size: var(--font-normal);
+        font-size: 1.25em;
         font-family: var(--font-family);
         font-weight: var(--bold-light);
     }
     &-info h1 {
         font-family: var(--font-family-title);
-        font-size: var(--font-title);
+        font-size: 2.75em;
         animation: 2s ease 1 running slidein;
     }
     &-info .span {
         align-items: center;
         position: relative;
-        top: -2rem;
+        top: -1rem;
         font-size: var(--font-normal);
         animation: 4s ease 1 running popin
     }
@@ -69,7 +69,7 @@ body {
 .button:hover,
 .button:focus {
     color: white;
-    background-color: var(--third-color);
+    background-color: #87A33D;
 }
 
 .market-info {
@@ -286,7 +286,7 @@ body {
 }
 
 .footer {
-    height: 20vh;
+    height: max(15vh, 7em);
     background: linear-gradient(to right, var(--third-color), var(--fourth-color));
     color: white;
     text-align: center;
@@ -394,34 +394,57 @@ body {
     .present {
         &-grid {
             width: 100%;
-            height: 35vw;
+            height: 25em;
         }
         &-info {
-            font-size: 1em;
+            font-size: 14px;
         }
+        &-info h1 {
+            font-size: 25px;
+        }
+        &-info .span {
+            font-size: 18px;
+            top: -7px;
+        }
+        &-images .circle-image {
+            width: 300px;
+            height: 290px;
+        }
+    }
+    .ent-service-card-content span {
+        font-size: 12px;
+    }
+    .ent-info-text .title {
+        font-size: 44pxx;
+    }
+    .ent-info-card {
+        width: 30vw;
+    }
+    .ent-info-card-title {
+        font-size: 20px;
+    }
+    .ent-info-card-content {
+        font-size: 12px;
     }
 }
 
 @media screen and (min-width: 720px) and (max-width: 1024px) {
     .present {
         &-grid {
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: none;
+            height: 75vw;
         }
         &-images {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: none;
             //transform: translateX(24px) rotate(-22deg);
         }
         &-images .circle-image {
             position: static;
-            width: 45em;
-            height: 23em;
+            width: 13em;
+            height: 12em;
             border-radius: 1em;
             animation: 400ms ease-in 1s 2 alternate img_rotate;
         }
         &-info {
-            font-size: 1.75em;
+            font-size: 16px;
         }
     }
     .ent {
