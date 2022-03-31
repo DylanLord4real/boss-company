@@ -285,19 +285,6 @@ body {
     }
 }
 
-.footer {
-    height: max(15vh, 7em);
-    background: linear-gradient(to right, var(--third-color), var(--fourth-color));
-    color: white;
-    text-align: center;
-    &-title {
-        text-align: center;
-    }
-    &-rights {
-        color: #CCC;
-    }
-}
-
 
 /* Responsive part */
 

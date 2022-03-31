@@ -1,3 +1,4 @@
+import { ProductViewComponent } from './product/product-view/product-view.component';
 import { ContactsViewComponent } from './contacts/contacts-view/contacts-view.component';
 import { DevisComponent } from './devis/devis.component';
 import { ProductComponent } from './product/product.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: "home", component: HomeComponent},
   {path: "contacts", component: ContactsComponent},
   {path: "product", component: ProductComponent},
+  {path: "product/:id", component: ProductViewComponent},
   {path: "devis", component: DevisComponent},
   {path: "service", component: ServiceComponent},
   {path: "service/:id", component: ServiceDetailsComponent},

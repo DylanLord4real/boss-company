@@ -1,0 +1,19 @@
+.present {
+    margin-top: 27.5vmin;
+    margin-bottom: 27.5vmin;
+    text-align: center;
+    .maintenance {
+        font-size: 13vmin;
+        font-family: var(--font-family);
+        color: yellowgreen;
+    }
+    .product_name {
+        font-family: var(--font-family);
+        font-size: 8vmin;
+        color: var(--third-color);
+    }
+    a {
+        font-size: 2em;
+        text-decoration: none;
+    }
+}

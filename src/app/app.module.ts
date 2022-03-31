@@ -1,3 +1,6 @@
+import { ProductService } from './Services/product.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { EmailService } from './Services/email/email.service';
 import { ProductComponent } from './product/product.component';
 import { InfoService } from './Services/info.service';
 import { NgModule } from '@angular/core';
@@ -10,8 +13,11 @@ import { ServiceComponent } from './service/service.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceDetailsComponent } from './service/service-details/service-details.component';
 import { DevisComponent } from './devis/devis.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactsViewComponent } from './contacts/contacts-view/contacts-view.component';
+import { ProductViewComponent } from './product/product-view/product-view.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MenuComponent } from './layout/menu/menu.component';
 
 
 
@@ -24,15 +30,22 @@ import { ContactsViewComponent } from './contacts/contacts-view/contacts-view.co
     ServiceDetailsComponent,
     ProductComponent,
     DevisComponent,
-    ContactsViewComponent
+    ContactsViewComponent,
+    ProductViewComponent,
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [
-    InfoService
+    InfoService,
+    EmailService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })

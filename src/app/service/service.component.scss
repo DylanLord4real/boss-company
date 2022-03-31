@@ -22,6 +22,7 @@
 .ent {
     &-info {
         &-card {
+            animation: shaker 200ms ease 300ms 2;
             cursor: pointer;
             color: white;
             background-size: cover;
@@ -88,7 +89,7 @@
 }
 
 .ent-info-card:hover .ent-info-card-content {
-    transform: translateY(0%);
+    transform: translateY(12%);
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
@@ -175,5 +176,17 @@
                 transform: translateY(-85%);
             }
         }
+    }
+}
+
+@keyframes shaker {
+    from {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(5deg);
+    }
+    to {
+        transform: rotate(-5deg);
     }
 }

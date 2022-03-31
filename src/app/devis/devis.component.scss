@@ -8,6 +8,33 @@
     background: var(--primary-color);
 }
 
+.success_bar {
+    display: flex;
+    z-index: 10;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    color: white;
+    width: 100vmin;
+    padding: 3.5vmin;
+    margin-top: 10vmin;
+    margin-bottom: 5vmin;
+    font-size: 4.5vmin;
+    font-family: var(--font-family);
+    justify-content: space-between;
+    .close {
+        color: #CCC;
+        cursor: pointer;
+        transition: 250ms ease;
+    }
+    .close:hover {
+        color: darkred;
+    }
+}
+
+.err {
+    color: red;
+}
+
 .card-explain {
     height: 30vh;
     max-width: 700px;
@@ -110,9 +137,14 @@ form .button input {
     transition: all 0.8s ease;
 }
 
-form .button input:hover {
+form .button input:hover:enabled {
     background: wheat;
     color: black;
+}
+
+form .button input:disabled {
+    background: #CCC;
+    color: white;
 }
 
 @media screen and (max-width: 420px) {

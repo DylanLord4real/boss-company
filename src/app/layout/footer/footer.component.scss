@@ -1,0 +1,72 @@
+.footer {
+    margin-top: 5vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 35vmin;
+    padding: 3.5vmin;
+    align-items: start;
+    background: linear-gradient(to right, var(--third-color), var(--fourth-color));
+    color: white;
+    &-location {
+        padding: 3vmin;
+    }
+    &-rights {
+        color: #CCC;
+        padding: 3vmin;
+    }
+    .foot {
+        &-logo {
+            border-radius: 5px;
+            height: 20vmin;
+            width: 45vmin;
+            margin-top: 6vmin;
+            background-image: url(../../../assets/images/Icon.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        &-menu {
+            h1 {
+                position: relative;
+            }
+            h1::after {
+                content: "";
+                position: absolute;
+                width: 30%;
+                height: 3px;
+                left: 0;
+                bottom: 0;
+                background: linear-gradient(to right, yellowgreen, var(--secondary-color));
+            }
+            li {
+                list-style: none;
+                font-size: 2.5vmin;
+                color: white;
+                margin: 0;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover {
+                    color: #EAC38A;
+                }
+            }
+        }
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .contact {
+        h1 {
+            position: relative;
+        }
+        h1::after {
+            content: "";
+            position: absolute;
+            width: 30%;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #CA3132, var(--secondary-color));
+        }
+    }
+}

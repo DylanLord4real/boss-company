@@ -3,28 +3,42 @@
         <h1>Faites une demande de devis</h1>
         <p>Cet onglet vous permets de contacter notre équipe pour avoir un devis du aux différents services que nous proposons</p>
     </div>
+    <div *ngIf="success === true" class="success_bar">
+        {{success_message}}
+        <span (click)="closed()" class="close">&times;</span>
+    </div>
     <div class="form-container">
         <div class="form-title">Vos Informations</div>
-        <form action="#">
+        <form [formGroup]="useFormBuild" (ngSubmit)="onSubmit()" autocomplete="off">
             <div class="form-info">
                 <div class="form-div">
-                    <span class="form-details">Nom Complet</span>
-                    <input type="text" class="form-input" name="name" id="name" placeholder="Votre Nom Entier">
+                    <span class="form-details">Nom Complet*</span>
+                    <input type="text" class="form-input" name="name" formControlName="fullName" id="name" placeholder="Votre Nom Entier" required>
+                    <div *ngIf="fbname && fbname.invalid && fbname.touched">
+                        <span *ngIf="fbname.errors?.required" class="err">Le nom est requis</span>
+                    </div>
                 </div>
                 <div class="form-div">
-                    <span class="form-details">Numero</span>
-                    <input type="tel" class="form-input" name="number" id="number" placeholder="+225 21 32 ** ** **">
+                    <span class="form-details">Numero*</span>
+                    <input type="tel" class="form-input" name="number" formControlName="number" id="number" placeholder="+225 21 32 ** ** **" required>
+                    <div *ngIf="fbnumber && fbnumber.invalid && fbnumber.touched">
+                        <span *ngIf="fbnumber.errors?.pattern" class="err">Veuillez saisir un numero de 10</span>
+                    </div>
                 </div>
                 <div class="form-div">
-                    <span class="form-details">Email</span>
-                    <input type="text" class="form-input" name="email" id="email" placeholder="email@email.com">
+                    <span class="form-details">Email*</span>
+                    <input type="text" class="form-input" name="email" id="email" formControlName="email" placeholder="email@email.com" required>
+                    <div *ngIf="fbemail && fbemail.invalid && fbemail.touched">
+                        <span *ngIf="fbemail.errors?.required" class="err">L'e-mail est requis</span>
+                        <span *ngIf="fbemail.errors?.email" class="err">Ceci n'est pas un mail conforme</span>
+                    </div>
                 </div>
                 <div class="form-div">
                     <span class="form-details">Service *</span>
-                    <select name="service" id="service" class="form-input">
-                  <option value="devApp">Développement d'application</option>
+                    <select name="service" id="service" formControlName="objet" class="form-input" required>
+                  <option value="Développement d'application">Développement d'application</option>
                   <option value="Sauvergarde">Sauvergarde</option>
-                  <option value="Maintenance">Maintenance/Entretien</option>
+                  <option value="Maintenance/Entretien">Maintenance/Entretien</option>
                   <option value="Gestion electronique de données">Gestion electronique de données</option>
                   <option value="Solution Mobile">Solution mobile</option>
                   <option value="Raccorderment de site">Raccorderment de site</option>
@@ -32,16 +46,22 @@
                   <option value="Création de site web">Création d'un site web</option>
                   <option value="Messagerie professionelle">Messagerie professionelle</option>
                 </select>
+                    <div *ngIf="fbobjet && fbobjet.invalid && fbobjet.touched">
+                        <span *ngIf="fbobjet.errors?.required" class="err">Le service est requis</span>
+                    </div>
                 </div>
                 <div class="form-div">
                     <span class="form-details">Message</span>
-                    <textarea name="Message" id="Message" cols="45" rows="10"></textarea>
+                    <textarea name="Message" id="Message" formControlName="message" cols="45" rows="10" required></textarea>
+                    <div *ngIf="fbmessage && fbmessage.invalid && fbmessage.touched">
+                        <span *ngIf="fbmessage.errors?.required" class="err">Le message  est requis</span>
+                    </div>
                 </div>
                 <div class="form-div">
                 </div>
             </div>
             <div class="button">
-                <input type="submit" value="Envoyer">
+                <input type="submit" value="Envoyer" [disabled]="useFormBuild.invalid">
             </div>
         </form>
     </div>

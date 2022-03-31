@@ -13,9 +13,14 @@ export class ServiceComponent implements OnInit {
 
   ngOnInit(): void {
     this.serv = this.info.servTab;
+    this.top();
   }
   goToServiceView(servId: number){
     this.router.navigate(['/service/'+servId])
+    this.top();
+  }
+  top(){
+    window.scrollTo(0, 0);
   }
 
 }

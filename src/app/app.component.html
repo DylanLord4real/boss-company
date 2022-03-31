@@ -1,20 +1,4 @@
-<div class="nav">
-    <div class="navbar">
-        <li routerLinkActive="active">
-            <a routerLink="home">Accueil</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink="product">Produits</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink="service">Services</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink="devis">Devis +</a>
-        </li>
-        <li routerLinkActive="active">
-            <a routerLink="/contacts/view">Contacts</a>
-        </li>
-    </div>
-</div>
-<router-outlet></router-outlet>
+<app-menu></app-menu>
+<router-outlet>
+</router-outlet>
+<app-footer></app-footer>

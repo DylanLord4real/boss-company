@@ -4,15 +4,17 @@
 }
 
 .card-present {
-    margin-top: 2.5em;
+    margin-top: 17vmin;
+    margin-bottom: 17vmin;
     width: 100%;
     background-color: #8E9AAF;
     color: white;
-    height: 55vh;
+    height: 65vmin;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     font-family: var(--font-family);
+    padding-top: 3vmin;
 }
 
 .title {
